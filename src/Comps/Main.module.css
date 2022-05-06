@@ -1,0 +1,17 @@
+body {
+    margin: 0 !important;
+    background-color: #242424 !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1550px) {
+    .list {
+      display: flex;
+      justify-content: space-around;
+    }
+}
