@@ -1,0 +1,121 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.absolute_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.w_fit {
+    width: fit-content !important;
+}
+
+.modal {
+    background: #24252660;
+}
+
+.modal_form {
+    width: 25%;
+    transition: 0.5s;
+    min-width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+    .modal_form {
+        width: 90%;
+        min-width: 300px;
+    }
+}
+
+.modal_header {
+    background: linear-gradient(black, rgb(220, 53, 69));
+    font-size: 120%;
+}
+
+.inputs {
+    outline: none !important;
+    transition: 0.3s;
+    border: 0.5px solid;
+    position: relative;
+}
+
+.inputs_errors {
+    border-color: #a71d2b !important;
+}
+
+.inputs_errors:focus {
+    box-shadow: 0 0 0.5rem 0.20rem #a71d2b !important;
+}
+
+.inputs:focus,
+.btn:focus {
+    box-shadow: 0 0 0.5rem 0.20rem #00000090;
+    transform: translate(5px, -5px);
+}
+
+.text_btn {
+    transition: 0.15s;
+    font-weight: 400;
+    font-size: 115%;
+    outline: none !important;
+    cursor: pointer;
+    user-select: none !important;
+}
+
+.text_btn:hover {
+    opacity: 0.7;
+}
+
+.text_btn:focus {
+    font-weight: 700;
+    opacity: 1;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid black;
+    outline: none !important;
+    transition: 0.3s;
+}
+
+.transition_15 {
+    transition: 0.15s;
+}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    min-width: 45px;
+}
+
+.loader div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    animation: loading 0.8s infinite;
+    opacity: 0.2;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loading {
+    0% {opacity: 1; transform: scale(1.8)};
+    100% {opacity: 0.2; transform: scale(1)};
+}
+
+.list {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0.5rem;
+}

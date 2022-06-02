@@ -1,0 +1,71 @@
+.list_title {
+    border: 1px solid black;
+    background: black;
+    cursor: pointer;
+    outline: none !important;
+    color: #ffffff95;
+    user-select: none !important;
+    transition: 0.3s;
+}
+
+.list_title_active {
+    color: #ffffff;
+}
+
+.list_title:hover,
+.list_title:focus {
+    color: #ffffff;
+}
+
+.list_title h6 {
+    width: fit-content;
+    user-select: none;
+}
+
+.main_list {
+    width: inherit;
+    background: white;
+    border: 1px solid black;
+    border-top: none !important;
+    transition: 0.3s;
+    overflow: hidden;
+    background: linear-gradient(#191919, rgb(220, 53, 69));
+}
+
+.main_list,
+.main_list ul {
+    list-style: none;
+    margin: 0 !important;
+    left: 0;
+    padding: 0;
+}
+
+.main_list ul {
+    width: 100%;
+    color: white !important;
+}
+
+.main_list ul li {
+    text-align: center;
+    user-select: none;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main_list ul li:hover,
+.main_list ul li:focus {
+    opacity: 1;
+}
+
+.main_list ul h6 {
+    text-align: center;
+    padding: 0.25rem;
+    user-select: none;
+    margin-bottom: 0;
+    font-size: 110%;
+}
+
+.main_list ul li {
+    cursor: pointer;
+    outline: none !important;
+}

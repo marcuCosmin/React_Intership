@@ -1,0 +1,33 @@
+.slider_frame {
+    transition: 0.15s;
+}
+
+.slider_frame img {
+    user-select: none;
+}
+
+.arrows {
+    font-size: 250%;
+    cursor: pointer;
+    outline: none !important;
+    color: #dc3545;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.arrow_right {
+    left: 10px;
+}
+
+.arrow_left {
+    right: 10px;
+}
+
+.arrows:hover,
+.arrows:focus {
+    color: #bd2130;
+}
+
+.slider_main {
+    overflow-x: hidden;
+}

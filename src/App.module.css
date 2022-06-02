@@ -1,0 +1,79 @@
+.unsupported_device_container {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.unsupported_device {
+    background-color: #303334;
+    height: 165px;
+    width: 100px;
+    border-radius: 1rem;
+}
+
+.unsupported_device_header {
+    height: 3px;
+    width: 25%;
+    background: repeating-linear-gradient(18deg, #555a5c, transparent 1px);
+}
+
+.unsupported_device_footer {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #626767;
+    background-color: #494d4f;
+}
+
+.unsupported_device_screen {
+    background: repeating-linear-gradient(45deg, black, white 200px);
+    border-radius: 0.5rem;
+}
+
+@keyframes pointLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pointRight {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.unsupported_device_arrows:nth-child(2) {
+    animation: pointLeft 1s infinite;
+}
+
+.unsupported_device_arrows:nth-child(1) {
+    animation: pointRight 1s infinite;
+}
+
+.unsupported_device_forbidden {
+    height: 50px;
+    width: 50px;
+    border: 4px solid rgb(220, 53, 69);
+    position: relative;
+}
+
+.unsupported_device_forbidden:after {
+    content: "";
+    width: 4px;
+    height: 47px;
+    background-color: rgb(220, 53, 69);
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+}

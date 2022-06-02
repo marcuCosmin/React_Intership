@@ -1,0 +1,71 @@
+.small {
+    width: 50px;
+}
+
+.small .suit {
+    font-size: 110%;
+}
+
+.small div {
+    font-size: 75%;
+}
+
+.medium {
+    width: 60px;
+}
+
+.medium div {
+    font-size: 90%;
+}
+
+.medium .suit {
+    font-size: 125%;
+}
+
+.large {
+    width: 75px;
+}
+
+.large div {
+    font-size: 100%;
+}
+
+.large .suit {
+    font-size: 175%;
+}
+
+.card {
+    cursor: pointer !important;
+    user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: 0.2s;
+}
+
+.card_footer {
+    transform: rotate(180deg) !important;
+}
+
+.spades {
+    color: #343a40 !important;
+}
+
+.hearts {
+    color: #dc3545 !important;
+}
+
+.diams {
+    color: #17a2b8 !important;
+}
+
+.clubs {
+    color: #28a745 !important;
+}
+
+.facedown_small {
+    height: 65px;
+    background-color: #303335 !important;
+}
+
+.facedown_background {
+    background: repeating-linear-gradient(45deg, black, rgb(220, 53, 69) 4px);
+}

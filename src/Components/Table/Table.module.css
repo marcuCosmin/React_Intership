@@ -1,0 +1,62 @@
+.table {
+    max-width: 1000px;
+    border-bottom: 25px solid #242526;
+    border-top: 2px solid #242526;
+    border-left: 5px solid #242526;
+    border-right: 5px solid #242526;
+    height: 500px;
+}
+
+.menu {
+    background: linear-gradient(rgb(220, 53, 69), black);
+    bottom: 0
+}
+
+.menu_btn {
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.menu_btn:hover,
+.menu_btn:focus {
+    opacity: 1;
+}
+
+.debug_menu {
+}
+
+.debug_menu_header {
+    background: linear-gradient(black, rgb(220, 53, 69));
+    cursor: pointer;
+}
+
+.debug_menu_title {
+    opacity: 0.7;
+    transition: 0.3s;
+    outline: none !important;
+}
+
+.debug_menu_title svg {
+    visibility: hidden;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.debug_menu_title:hover, 
+.debug_menu_title:focus {
+    opacity: 1;
+}
+
+.debug_menu_title:hover svg, 
+.debug_menu_title:focus svg{
+    visibility: visible;
+    opacity: 1;
+}
+
+.debug_menu_item_disabled {
+    opacity: 0.3 !important;
+    cursor: not-allowed !important;
+}

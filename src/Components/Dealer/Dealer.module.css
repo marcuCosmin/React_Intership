@@ -1,0 +1,28 @@
+.dealer {
+    width: 40px;
+    height: 40px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.dealer_placeholder {
+    border: 2px solid #99999970;
+    background-color: #ffffff30;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.dealer_placeholder:hover,
+.dealer_placeholder:focus {
+    background: #ffffff80;
+    border: 1px solid #ffffff;
+}
+
+.dealer_placeholder:focus {
+    transform: scale(1.2);
+}
+
+.dealer_fill {
+    background-color: #2F2F2F;
+    border-bottom: 4px solid black;
+}
