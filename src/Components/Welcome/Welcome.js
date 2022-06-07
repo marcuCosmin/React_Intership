@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
+
 import styles from './Welcome.module.css';
 import cstyles from '../../Common.module.css';
+
 import { deviceWidth } from '../../Contexts/DeviceWidth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import img1 from '../../Images/15419567_1197938320289641_2525929513548802555_o.jpg';
 import img2 from '../../Images/stock-photo-142984111.jpg';
 import img3 from '../../Images/pandasecurity-facebook-photo-privacy.jpg';

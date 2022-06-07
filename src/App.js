@@ -1,13 +1,17 @@
 import { initializeApp } from 'firebase/app';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from './App.module.css';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {useContext} from 'react';
-import { deviceWidth } from './Contexts/DeviceWidth';
+
 import Header from './Components/Header/Header';
 import Welcome from './Components/Welcome/Welcome';
 import Lobby from './Components/Lobby/Lobby';
 import Table from './Components/Table/Table';
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {useContext} from 'react';
+
+import { deviceWidth } from './Contexts/DeviceWidth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

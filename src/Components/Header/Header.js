@@ -1,12 +1,15 @@
 import React, {useContext, useEffect, useState, useRef} from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, getIdToken, signOut, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
-import styles from './Header.module.css';
-import cstyles from '../../Common.module.css';
-import {user} from '../../Contexts/Authentication';
+
 import Card from '../Card/Card';
 import Checkbox from '../Checkbox/Checkbox';
 import Loader from '../Loader/Loader';
+
+import styles from './Header.module.css';
+import cstyles from '../../Common.module.css';
+
+import { Link, NavLink } from 'react-router-dom';
+import { getAuth, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, getIdToken, signOut, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
+import {user} from '../../Contexts/Authentication';
 import { deviceWidth } from '../../Contexts/DeviceWidth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faEye, faEyeSlash, faTimes, faSignOutAlt, faCog, faDollarSign, faHistory } from '@fortawesome/free-solid-svg-icons';

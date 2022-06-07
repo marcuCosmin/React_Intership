@@ -1,8 +1,12 @@
 import React, {useState, useEffect, useRef, useContext} from 'react';
+
 import styles from './Lobby.module.css';
 import cstyles from '../../Common.module.css';
+
 import Checkbox from '../Checkbox/Checkbox';
+
 import {user} from '../../Contexts/Authentication';
+
 import { doc, updateDoc, arrayUnion, onSnapshot, collection, setDoc, query, where } from "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -115,10 +119,14 @@ export default function Lobby() {
 
     return (
         <div className='d-flex flex-column align-items-center justify-content-center mt-4'>
-            <div>Active tables</div>
+
+            <div>
+                <div>Active tables</div>
+            </div>
+            
             <div>
                 <div>
-                    <form>
+                    <form className={`shadow rounded p-3`} onSubmit={addTable}>
                         <div className='position-relative'>
                             <div tabIndex='0' className={`d-flex align-items-center justify-content-around ${inputs.stakes.dropdownVisible ? 'rounded-top' : 'rounded'} ${styles.list_title} ${inputs.stakes.dropdownVisible && styles.list_title_active}`} onKeyUp={function(e) {if (e.key === 'Enter') {
                                 window.removeEventListener('click', escapeDropdown);
@@ -170,8 +178,9 @@ export default function Lobby() {
                             <Checkbox state={{value: inputs.debug, update: function(e) {(e.type === 'click' || e.key === 'Enter') && setInputs({...inputs, debug: !inputs.debug});}}} label={{value: 'Debug mode', fontSize: 100}}/>
                             <FontAwesomeIcon className='ms-3' icon={faInfo}/>
                         </div>
+
+                        <button className={`mt-3 w-100 rounded p-2 ${cstyles.btn}`} type='button'>Create new table</button>
                     </form>
-                    <button className={`mt-3 w-100 rounded p-2 ${cstyles.btn}`} type='button' onKeyUp={function (e) {e.key === 'Enter' && addTable();}} onClick={addTable}>Create new table</button>
                 </div>
                 <ul>
 
