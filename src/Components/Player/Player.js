@@ -1,6 +1,8 @@
 import React, {useContext, useState} from 'react';
+
 import Card from '../Card/Card';
 import styles from './Player.module.css';
+
 import { deviceWidth } from '../../Contexts/DeviceWidth';
 import { getAuth } from 'firebase/auth';
 

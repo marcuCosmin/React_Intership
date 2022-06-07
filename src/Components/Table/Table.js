@@ -1,19 +1,22 @@
 import React, {useContext, useEffect, useState, useRef} from 'react';
 import { useLocation } from 'react-router-dom';
+
 import styles from './Table.module.css';
 import cstyles from '../../Common.module.css';
-import { deviceWidth } from '../../Contexts/DeviceWidth';
+
 import Card from '../Card/Card';
+import Player from '../Player/Player';
+import Loader from '../Loader/Loader';
+import Dealer from '../Dealer/Dealer';
+import Chip from '../Chip/Chip';
+
+import { deviceWidth } from '../../Contexts/DeviceWidth';
 import { arrayUnion, arrayRemove, getFirestore } from "firebase/firestore";
 import { doc, onSnapshot, updateDoc } from "firebase/firestore";
-import Player from '../Player/Player';
 import { user } from '../../Contexts/Authentication';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faStop, faUndo, faUserMinus, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { getAuth } from 'firebase/auth';
-import Loader from '../Loader/Loader';
-import Dealer from '../Dealer/Dealer';
-import Chip from '../Chip/Chip';
 
 export default function Table() {
 
