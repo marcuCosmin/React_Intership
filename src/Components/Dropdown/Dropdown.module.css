@@ -1,0 +1,39 @@
+.dropdown_title {
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown_title svg {
+    font-size: 125%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.dropdown_title:hover svg {
+    opacity: 1;
+}
+
+.dropdown_title_open svg {
+    opacity: 1 !important;
+}
+
+.dropdown_list {
+    z-index: 9999;
+    border: 1px solid black;
+    border-top: none;
+    box-shadow: inset 0 0 15px;
+    user-select: none;
+}
+
+.dropdown_list li {
+    cursor: pointer;
+}
+
+.dropdown_list li:hover {
+    font-weight: bold;
+}
+
+.dropdown_title_placeholder {
+    color: rgb(117, 117, 117);
+}

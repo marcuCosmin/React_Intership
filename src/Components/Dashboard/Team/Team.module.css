@@ -1,0 +1,83 @@
+.age_select {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 250px;
+    border: 1px solid black;
+    padding-left: 1rem !important;
+    min-width: 30%;
+    user-select: none;
+    color: transparent;
+    transition: 0.3s;
+}
+
+.age_select:hover,
+.age_select:focus-within {
+    color: #18191A;
+}
+
+.age_select::-webkit-scrollbar {
+	width: 14px;
+}
+
+.age_select::-webkit-scrollbar-thumb {
+
+	background-clip: content-box;
+	border: 3px solid transparent;
+	border-radius: 7px;
+	box-shadow: inset 0 0 0 10px;
+}
+
+.age_select::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.age_select::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+
+.age_select li {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #18191A;
+    border-radius: 0.25rem;
+}
+
+.age_select_current {
+    background-color: #515456;
+    color: white !important;
+    font-weight: bold;
+}
+
+.form {
+    user-select: none;
+    height: fit-content;
+    min-width: 400px;
+}
+
+.search_dropdown {
+    border: 1px solid black;
+    border-top: none;
+    width: 100%;
+    left: 0;
+    z-index: 9999;
+    transform: translate(5px, -5px);
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.search_dropdown li {
+    cursor: pointer;
+}
+
+.search_dropdown li:hover {
+    font-weight: bold;
+}
+
+.searchbox_active {
+    transform: translate(5px, -5px);
+    box-shadow: 0 0 0.5rem 0.20rem #00000090;
+}

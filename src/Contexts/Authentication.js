@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-
 import { getAuth, onIdTokenChanged } from "firebase/auth";
 
 const user = React.createContext({
@@ -9,7 +8,9 @@ const user = React.createContext({
     emailVerified: false,
     uid: '',
     photoURL: null,
-    completed: false
+    completed: false,
+    joined: '',
+    email: ''
 });
 
 function Authentication({children}) {
@@ -22,11 +23,14 @@ function Authentication({children}) {
         uid: '',
         photoURL: null,
         completed: false,
+        joined: '',
+        email: ''
     });
 
     useEffect(function() {
         
         onIdTokenChanged(getAuth(), function (user) {
+
             if (user) {
             
                 setUserProps({
@@ -36,7 +40,9 @@ function Authentication({children}) {
                     emailVerified: user.emailVerified,
                     uid: user.uid,
                     photoURL: user.photoURL,        
-                    completed: user.displayName ? true : false,
+                    completed: user.uid ? true : false,
+                    joined: user.metadata.creationTime,
+                    email: user.email
                 });
 
             } else {
@@ -49,6 +55,8 @@ function Authentication({children}) {
                     uid: '',
                     photoURL: null,
                     completed: true,
+                    joined: '',
+                    email: ''
                 });
             }
         });

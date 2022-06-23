@@ -1,0 +1,26 @@
+.toggle {
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 2rem;
+    cursor: pointer;
+    height: 20px;
+    width: 60px;
+}
+
+.toggle_text {
+    color: rgb(117, 117, 117);
+    font-size: 110%;
+    transition: 0.15s;
+}
+
+.toggle_active_text {
+    font-weight: bold;
+    color: #3E4042;
+}
+
+.toggle_circle {
+    height: 100%;
+    width: 50%;
+    background-color: #3E4042;
+    border-radius: 2rem;
+    transition: 0.3s;
+}

@@ -1,0 +1,57 @@
+.image {
+    border: 2px solid black;
+}
+
+.sub {
+    color: gray;
+    background: transparent !important;
+}
+
+.link {
+    color: #3E4042;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.svgs {
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.svgs:hover {
+    opacity: 0.5;
+}
+
+.team_logo {
+    font-size: 50px;
+}
+
+.search_dropdown {
+    border: 1px solid black;
+    border-top: none;
+    width: 100%;
+    left: 0;
+    z-index: 9000;
+    transform: translate(5px, -5px);
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.search_dropdown li {
+    cursor: pointer;
+}
+
+.search_dropdown li:hover {
+    font-weight: bold;
+}
+
+.searchbox_active {
+    transform: translate(5px, -5px);
+    box-shadow: 0 0 0.5rem 0.20rem #00000090;
+}

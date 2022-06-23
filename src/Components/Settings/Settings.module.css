@@ -1,0 +1,46 @@
+.image_container {
+    cursor: pointer;
+}
+
+.image_container:hover .svg_container {
+    opacity: 1;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.svg_container {
+    opacity: 0;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    background: #00000040;
+}
+
+.svg_container div {
+    color: white !important;
+    font-size: 125%;
+}
+
+.svg {
+    font-size: 200%;
+    color: white;
+}
+
+.upload {
+    display: none;
+}
+
+.save {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 120%;
+}
+
+.backdrop {
+    backdrop-filter: blur(10px);
+}

@@ -1,0 +1,72 @@
+.dashboard {
+    background-color: #3E4042;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    user-select: none;
+}
+
+.dashboard_list {
+    background-color: transparent;
+    font-size: 120%;
+}
+
+.dashboard_list li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dashboard_list li:hover a {
+    opacity: 1;
+}
+
+.dashboard_list li:focus-within {
+    background-color: #18191A;
+}
+
+.dashboard_list li:focus-within a {
+    opacity: 1;
+}
+
+.dashboard_list a {
+    color: white;
+    text-decoration: none !important;
+    opacity: 0.6;
+    outline: none !important;
+}
+
+.dashboard_list li svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dashboard_current a {
+    opacity: 1 !important;
+}
+
+.requests_title {
+    opacity: 0.7;
+}
+
+.requests_title:hover {
+    opacity: 1;
+}
+
+.requests_title_active {
+    opacity: 1 !important;
+}
+
+.requests_title span {
+    opacity: 1;
+    background: transparent !important;
+}
+
+.requests_list li a {
+    opacity: 1;
+    transition: 0.3s;
+    background: transparent !important;
+}
+
+.requests_list li a:hover {
+    opacity: 0.7;
+}
